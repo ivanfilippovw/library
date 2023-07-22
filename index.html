@@ -1,18 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./app/css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Brooklyn Public Library</title>
 </head>
-
-<body>
-
+<div class="header-welcome--wrapper">
+  <header class="header">
+    <h1 class="header__title">Brooklyn Public Library</h1>
+    <nav class="header__navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#favorites" class="navigation__link">Favorites</a></li>
+        <li class="navigation__item"><a href="#cafe" class="navigation__link">Coffee shop</a></li>
+        <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
+        <li class="navigation__item"><a href="#cards" class="navigation__link">Library Card</a></li>
+      </ul>
+    </nav>
+    <img src="" alt="Login to your personal account." loading="lazy">
+  </header>
+  <section class="welcome">
+    <p class="welcome__text-block">Welcome to the Brooklyn Library</p>
+  </section>
+</div>
 <main>
-  TESTTESTfdhjskgfhdskahfgkdsahfsdahklf
+  <section class="about" id="about">
+    <h2 class="about__title">About</h2>
+    <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop
+      inside </p>
+    <div class="about__gallery">
+      <img src="" alt="" loading="lazy">
+      <img src="" alt="" loading="lazy">
+      <img src="" alt="" loading="lazy">
+    </div>
+    <div class="about__gallery-buttons">
+      <button class="about__button" type="button">
+        <span class="visually-hidden">The first section of the photo library.</span>
+      </button>
+      <button class="about__button" type="button">
+        <span class="visually-hidden">The second section of the photo library.</span>
+      </button>
+      <button class="about__button" type="button">
+        <span class="visually-hidden">The third section of the photo library.</span>
+      </button>
+    </div>
+  </section>
+  <section class="favorites" id="favorites">
+    <h2 class="favorites__title">Favorites</h2>
+    <p class="favorites__text">Pick favorites of season</p>
+    <form class="favorites__form" action="https://echo.htmlacademy.ru/" method="get">
+      <ul class="favorites__form-list">
+        <li class="favorites__form-item">
+          <input class="favorites__input" type="radio" name="seasons" id="winter">
+          <label class="favorites__label favorites__label--current" for="winter">Winter</label>
+        </li>
+        <li class="favorites__form-item">
+          <input class="favorites__input" type="radio" name="seasons" id="spring">
+          <label class="favorites__label" for="spring">Spring</label>
+        </li>
+        <li class="favorites__form-item">
+          <input class="favorites__input" type="radio" name="seasons" id="summer">
+          <label class="favorites__label" for="summer">Summer</label>
+        </li>
+        <li class="favorites__form-item">
+          <input class="favorites__input" type="radio" name="seasons" id="autumn">
+          <label class="favorites__label" for="autumn">Autumn</label>
+        </li>
+      </ul>
+    </form>
+    <div class="books books__winters">
+      <article class="book">
+        <h3 class="books__title">Staff Picks</h3>
+        <p class="book__meta">
+        <h4 class="book__title">The Book Eaters</h4>
+        <cite class="book__author">By Sunyi Dean</cite>
+        </p>
+        <p class="book__about">An unusual sci-fi story about a book eater woman who tries desperately to save her
+          dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light
+          Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+        <button class="button book__button">Buy</button>
+        <img class="book__cover" src="" alt="Сover of The Book Eaters" loading="lazy">
+      </article>
+      <article class="book">
+        <h3 class="books__title">Staff Picks</h3>
+        <p class="book__meta">
+        <h4 class="book__title">Cackle</h4>
+        <cite class="book__author">By Rachel Harrison</cite>
+        </p>
+        <p class="book__about">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no
+          further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and
+          befriends a beautiful witch.</p>
+        <button class="button book__button">Buy</button>
+        <img class="book__cover" src="" alt="Сover of Cackle" loading="lazy">
+      </article>
+      </article>
+      <article class="book">
+        <h3 class="books__title">Staff Picks</h3>
+        <p class="book__meta">
+        <h4 class="book__title">Dante: Poet of the Secular World</h4>
+        <cite class="book__author">By Erich Auerbach</cite>
+        </p>
+        <p class="book__about">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and
+          philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul
+          into something of divine significance—an inspired introduction to Dante's main themes.</p>
+        <button class="button book__button">Buy</button>
+        <img class="book__cover" src="" alt="Сover of Dante: Poet of the Secular World" loading="lazy">
+      </article>
+      </article>
+      <article class="book">
+        <h3 class="books__title">Staff Picks</h3>
+        <p class="book__meta">
+        <h4 class="book__title">The Last Queen</h4>
+        <cite class="book__author">By Clive Irving</cite>
+        </p>
+        <p class="book__about">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how
+          the Windsors have evolved and thrived as the modern world has changed around them.</p>
+        <button class="button book__button">Buy</button>
+        <img class="book__cover" src="" alt="The Last Queen" loading="lazy">
+      </article>
+      </article>
+    </div>
+  </section>
+  <section class="cafe" id="cafe">
+    <h2 class="cafe__title">Coffee shop</h2>
+    <p class="cafe__text">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos
+      and friendly conversation.
+      you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try
+      desserts from bakery.</p>
+    <div class="cafe__lists-wrapper">
+      <div class="cafe__drinks-list">
+        <h3 class="cafe__list-title">Coffee & Tea</h3>
+        <ul class="cafe__list">
+          <li class="cafe__item">Cold Brew Coffee <span class="cafe__price">$3</span></li>
+          <li class="cafe__item">French Press Pot <span class="cafe__price">$5</span></li>
+          <li class="cafe__item">Espresso <span class="cafe__price">$2</span></li>
+          <li class="cafe__item">Cappuccino <span class="cafe__price">$4</span></li>
+          <li class="cafe__item">Hot tea <span class="cafe__price">$2</span></li>
+          <li class="cafe__item">Cold tea <span class="cafe__price">$2</span></li>
+        </ul>
+      </div>
+      <div class="cafe__sweet-shop-list">
+        <h3 class="cafe__list-title"></h3>
+        <ul class="cafe__list">
+          <li class="cafe__item">Forest Gateau <span class="cafe__price">$16</span></li>
+          <li class="cafe__item">Blue Moon <span class="cafe__price">$16</span></li>
+          <li class="cafe__item">Truffle Cake <span class="cafe__price">$15</span></li>
+          <li class="cafe__item">Chocolate Cake <span class="cafe__price">$18</span></li>
+          <li class="cafe__item">Poet’s Dream Cake <span class="cafe__price">$16</span></li>
+          <li class="cafe__item">Pineapple Cake <span class="cafe__price">$14</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <h2 class="contacts__title">Our Contacts</h2>
+    <div class="contacts__wrapper">
+      <div class="contacts__contacts">
+        <h3 class="contacts__contacts-title">For all Library inquiries:</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            Please call <a class="contacts__phone-link" href="tel:+6177302370">(617) 730-2370</a>
+          </li>
+          <li class="contacts__item">
+            For TTY service, please call <a class="contacts__phone-link" href="tel:+6177302370">(617) 730-2370</a>
+          </li>
+          <li class="contacts__item">
+            Putterham Library: <a class="contacts__phone-link" href="tel:+617730-2385">(617) 730-2385</a>
+          </li>
+        </ul>
+        <h3 class="contacts__contacts-title">Senior Staff</h3>
+        <p class="contacts__contact">Library Director:
+          <a class="contacts__mail-link" href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a>
+        </p>
+      </div>
+      <iframe class="contacts__map" src="" frameborder="0">
+      </iframe>
+    </div>
+  </section>
+  <section class="cards" id="cards">
+    <h2 class="cards__title">Digital Library Cards</h2>
+    <div class="cards__wrapper">
+      <div class="card__search-wrapper">
+        <h3 class="cards__search">Find your Library card</h3>
+        <form class="cards__card card" action="https://echo.htmlacademy.ru/" method="post">
+          <h4 class="card__title">Brooklyn Public Library</h4>
+          <input class="card__input" type="text" placeholder="Reader's name">
+          <input class="card__input" type="number" placeholder="Card number">
+          <button class="card__button" type="submit">Check the card</button>
+        </form>
+      </div>
+      <div class="cards__authorization">
+        <h3 class="cards__search">Get a reader card</h3>
+        <p class="cards__text">You will be able to see a reader card after logging into account or you can register a
+          new account</p>
+        <div class="cards__authorization-buttons">
+          <button class="cards__authorization-button" type="button">Sign Up</button>
+          <button class="cards__authorization-button" type="button">Log in</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-
-</body>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__meta">
+      <address class="footer__address">286 Cadman Plaza, New York, NY 11238, United States</address>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a clsss="footer__link"></a>
+          <span class="visually-hidden">Go to Twitter.</span>
+        </li>
+        <li class="footer__item">
+          <a clsss="footer__link"></a>
+          <span class="visually-hidden">Go to Instagram.</span>
+        </li>
+        <li class="footer__item">
+          <a clsss="footer__link"></a>
+          <span class="visually-hidden">Go to Facebook.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__wrapper">
+      <p class="footer__schedule">Mon - Fri<br>08:00 am - 07:00 pm</p>
+      <p class="footer__schedule">Sat - Sun<br>10:00 am - 06:00 pm</p>
+    </div>
+  </div>
+  <hr>
+  <div class="footer__wrapper">
+    <p class="footer__year">2023</p>
+    <a class="footer__school">The Rolling Scopes School</a>
+    <a class="footer__github-link">Username</a>
+  </div>
+</footer>
 
 </html>
