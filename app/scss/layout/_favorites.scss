@@ -1,0 +1,29 @@
+.favorites__text {
+  font-weight: 700;
+}
+
+.favorites__label--current {
+  font-weight: 700;
+}
+
+.books__title {
+  font-family: $font-second;
+  text-transform: capitalize;
+}
+
+.book {
+  &__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.66;
+    text-transform: capitalize;
+  }
+}

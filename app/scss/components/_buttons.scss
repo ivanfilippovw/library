@@ -1,0 +1,15 @@
+.button {
+  min-width: 75px;
+  min-height: 30px;
+  padding: 9px 27px;
+  text-align: center;
+  font-family: $font-basic;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: $light-dark-color;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid $light-dark-color;
+}

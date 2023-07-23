@@ -1,0 +1,19 @@
+.cafe__text {
+  text-align: center;
+}
+
+.cafe__list-title {
+  font-family: $font-second;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: $primary-color;
+}
+
+.cafe__item {
+  text-transform: capitalize;
+}
+
+.cafe__price {
+  font-family: $font-second;
+}

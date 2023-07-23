@@ -1,16 +1,36 @@
-.footer-twitter-icon {
+.footer {
+  color: $base-light-color;
+  background-color: $light-dark-color;
+  &__address {
+    width: 229px;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+  &__schedule {
+    font-size: 15px;
+    line-height: 1.33;
+  }
+  &__year {
+    line-height: 1;
+  }
+  &__school {
+    line-height: 1;
+  }
+}
+
+.footer__twitter-icon {
   width: 24px;
   height: 24px;
   fill: #f5efdb;
 }
 
-.footer-instagram-icon {
+.footer__instagram-icon {
   width: 24px;
   height: 24px;
   fill: #f5efdb;
 }
 
-.footer-facebook-icon {
+.footer__facebook-icon {
   width: 24px;
   height: 24px;
   fill: #f5efdb;

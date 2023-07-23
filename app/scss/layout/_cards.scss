@@ -1,0 +1,36 @@
+.cards__search-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.card__title {
+  font-family: $font-second;
+  font-size: 30px;
+  line-height: 1.66;
+  letter-spacing: 0.6px;
+}
+
+.card__input::placeholder {
+  font-family: $font-second;
+  font-size: 30px;
+  line-height: 1.66;
+  letter-spacing: 0.6px;
+  color: $placeholder;
+}
+
+.card__button {
+  font-size: 20px;
+}
+
+.cards__search {
+  font-family: $font-second;
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.cards__text {
+  letter-spacing: 0.4px;
+}
