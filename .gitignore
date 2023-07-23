@@ -1,3 +1,12 @@
 .DS_Store
 node_modules
 dist
+app/images/src/**
+app/images/*.avif
+app/images/*.webp
+app/images/stack
+app/images/footer-facebook-icon.svg
+app/images/footer-instagram-icon.svg
+app/images/footer-twitter-icon.svg
+app/images/header-login-icon.svg
+
