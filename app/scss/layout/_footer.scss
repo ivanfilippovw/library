@@ -1,20 +1,54 @@
 .footer {
+  padding-top: 20px;
+  padding-bottom: 44px;
   color: $base-light-color;
   background-color: $light-dark-color;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $base-light-color;
+  }
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
   &__address {
     width: 229px;
+    margin-bottom: 15px;
     font-size: 15px;
+    font-style: normal;
     line-height: 1.33;
+    letter-spacing: initial;
+  }
+  &__schedule-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: end;
   }
   &__schedule {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 15px;
     line-height: 1.33;
+    letter-spacing: initial;
+  }
+  &__meta-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
   }
   &__year {
-    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: initial;
   }
   &__school {
-    line-height: 1;
+    line-height: initial;
+  }
+  &__github-link {
+    line-height: initial;
   }
 }
 

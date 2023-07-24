@@ -1,36 +1,97 @@
-.cards__search-title {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.6px;
+.cards {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
 }
 
-.card__title {
-  font-family: $font-second;
-  font-size: 30px;
-  line-height: 1.66;
-  letter-spacing: 0.6px;
+.card {
+  width: 600px;
+  min-height: 387px;
+  padding-top: 17px; //20
+  padding-right: 20px;
+  padding-bottom: 24px; //30
+  padding-left: 17px; //20
+  border: 3px solid $primary-color;
+  &__wrapper {
+    width: 560px;
+    min-height: 272px;
+    margin-bottom: 20px;
+    padding: 20px 20px 25px 20px;
+    background-color: $primary-color;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: $font-second;
+    font-size: 30px;
+    line-height: 1.66;
+    letter-spacing: 0.6px;
+  }
+  &__input {
+    display: block;
+    width: 520px;
+    height: 66px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  &__input:nth-of-type(odd) {
+    margin-bottom: 25px;
+  }
+  &__input::placeholder {
+    font-family: $font-second;
+    font-size: 30px;
+    line-height: 1.66;
+    letter-spacing: 0.6px;
+    color: $placeholder;
+  }
+  &__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 40px;
+    font-size: 20px;
+  }
 }
 
-.card__input::placeholder {
-  font-family: $font-second;
-  font-size: 30px;
-  line-height: 1.66;
-  letter-spacing: 0.6px;
-  color: $placeholder;
+.cards__authorization {
+  width: 600px;
+  text-align: end;
+  &-title {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-family: $font-second;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+  &-text {
+    width: 457px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-left: auto;
+    text-align: end;
+    letter-spacing: 0.4px;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  &-button {
+    padding: 0;
+  }
 }
 
-.card__button {
-  font-size: 20px;
-}
-
-.cards__search {
-  font-family: $font-second;
-  font-size: 30px;
-  line-height: normal;
-  letter-spacing: 0.6px;
-}
-
-.cards__text {
-  letter-spacing: 0.4px;
-}

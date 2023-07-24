@@ -1,0 +1,29 @@
+.welcome {
+  min-height: 600px;
+  padding-top: 220px;
+  padding-bottom: 160px;
+  padding-left: 0;
+  background-color: $light-dark-color;
+  background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%), url("../images/welcome.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  >.container {
+    padding-left: 0;
+  }
+  &__text {
+    width: 600px;
+    height: 220px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 35px 40px;
+    font-family: $font-second;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $base-light-color;
+    background-color: $light-dark-color;
+  }
+}

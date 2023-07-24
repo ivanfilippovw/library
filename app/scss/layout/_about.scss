@@ -1,3 +1,32 @@
+.about {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .about__text {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
+  letter-spacing: initial;
+}
+
+.about__gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  &-buttons-list {
+    display: flex;
+    justify-content: center;
+  }
+  &-button {
+    min-width: 16px;
+    min-height: 16px;
+    padding: 5px;
+    background-color: $base-dark-color;
+    border: none;
+    border-radius: 50%;
+  }
+  &-button--current {
+    background-color: $primary-color;
+  }
 }

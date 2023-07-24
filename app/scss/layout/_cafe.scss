@@ -1,19 +1,59 @@
-.cafe__text {
-  text-align: center;
-}
+.cafe {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  &__text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__lists-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__drinks-list {
+    width: 438px;
+  }
+  &__sweet-shop-list {
+    width: 482px;
+    >.cafe__list-title {
+      text-align: end;
+    }
+    >.cafe__list {
+      align-items: flex-end;
+    }
 
-.cafe__list-title {
-  font-family: $font-second;
-  font-size: 40px;
-  line-height: 1;
-  text-transform: capitalize;
-  color: $primary-color;
-}
-
-.cafe__item {
-  text-transform: capitalize;
-}
-
-.cafe__price {
-  font-family: $font-second;
+  }
+  &__list-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: $font-second;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: $primary-color;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__item {
+    display: flex;
+    text-transform: capitalize;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-family: $font-second;
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 1px;
+      margin-right: 60px;
+      margin-left: 56px;
+      background-color: $primary-color;
+    }
+  }
 }

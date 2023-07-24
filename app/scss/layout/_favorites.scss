@@ -1,29 +1,113 @@
-.favorites__text {
-  font-weight: 700;
+.favorites {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-.favorites__label--current {
+.favorites__text {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-weight: 700;
+  line-height: initial;
+  letter-spacing: initial;
+}
+
+.favorites__form {
+  margin-bottom: 39px;
+  line-height: initial;
+  &-list {
+    display: flex;
+    gap: 90px;
+    letter-spacing: initial;
+  }
+  &-item {
+    display: flex;
+  }
+  &-input {
+    align-self: center;
+    width: 17px;
+    height: 17px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 3px;
+    border: 2px solid $base-dark-color;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    // outline: none;
+  }
+  &-input:checked {
+    border-color: $base-dark-color;
+    background: $base-dark-color content-box;
+  }
+  &-label--current {
+    font-weight: 700;
+  }
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 260px;
 }
 
 .books__title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: $font-second;
+  font-size: 20px;
+  line-height: 1.85; //37px
   text-transform: capitalize;
+  &:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-color;
+  }
 }
 
 .book {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  min-height: 555px;
+  padding: 15px 20px;
+  border: 1px solid #000;
   &__title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 15px;
     font-weight: 700;
     line-height: 2.66;
     text-transform: uppercase;
   }
-
   &__author {
+    display: block;
+    margin-bottom: 20px;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: 2.66;
     text-transform: capitalize;
+  }
+  &__about {
+    width: 358px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 2.66;
+    text-transform: capitalize;
+  }
+  &__button {
+    margin-top: auto;
+    align-self: start;
+    padding: 0; // нужно ли убрать padding у всех кнопок? проверить, когда доделаю макет по pp
+  }
+  &__cover {
+    position: absolute;
+    right: -41px;
+    bottom: -1px;
   }
 }
