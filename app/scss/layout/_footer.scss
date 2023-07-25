@@ -13,13 +13,25 @@
     display: flex;
     gap: 15px;
   }
-  &__address {
+  &__address-link {
+    display: block;
     width: 229px;
     margin-bottom: 15px;
     font-size: 15px;
     font-style: normal;
     line-height: 1.33;
     letter-spacing: initial;
+    color: $base-light-color;
+    transition: all 0.2s;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      color: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
   &__schedule-wrapper {
     display: flex;
@@ -46,9 +58,43 @@
   }
   &__school {
     line-height: initial;
+    color: $base-light-color;
+    transition: all 0.2s;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      color: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
   &__github-link {
     line-height: initial;
+    color: $base-light-color;
+    transition: all 0.2s;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      color: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__link {
+    transition: all 0.2s;
+    &:hover > svg {
+      fill: $primary-color;
+    }
+    &:focus > svg {
+      fill: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -56,16 +102,19 @@
   width: 24px;
   height: 24px;
   fill: #f5efdb;
+  transition: all 0.2s;
 }
 
 .footer__instagram-icon {
   width: 24px;
   height: 24px;
   fill: #f5efdb;
+  transition: all 0.2s;
 }
 
 .footer__facebook-icon {
   width: 24px;
   height: 24px;
   fill: #f5efdb;
+  transition: all 0.2s;
 }

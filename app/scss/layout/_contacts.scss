@@ -22,6 +22,15 @@
   }
   &__phone-link {
     color: $base-dark-color;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      color: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
   &__contacts-title:nth-of-type(2) {
     margin-bottom: 20px;
@@ -33,5 +42,14 @@
   &__mail-link {
     font-weight: 700;
     color: $base-dark-color;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      color: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
 }

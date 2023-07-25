@@ -44,8 +44,24 @@
     width: 520px;
     height: 66px;
     padding: 8px 20px;
+
+    font-family: $font-second;
+    font-size: 30px;
+    line-height: 1.66;
+    letter-spacing: 0.6px;
+    color: $primary-color;
+
     border: none;
     border-radius: 10px;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:focus {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
   }
   &__input:nth-of-type(odd) {
     margin-bottom: 25px;
@@ -63,6 +79,18 @@
     margin-left: auto;
     padding: 10px 40px;
     font-size: 20px;
+    transition: all 0.2s;
+    &:hover {
+      border: 1px solid $primary-color;
+      background: $primary-color;
+    }
+    &:focus {
+      border: 1px solid $primary-color;
+      background: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -92,6 +120,19 @@
   }
   &-button {
     padding: 0;
+    transition: all 0.2s;
+    &:hover {
+      border: 1px solid $primary-color;
+      background: $primary-color;
+    }
+    &:focus {
+      border: 1px solid $primary-color;
+      background: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
+
 
