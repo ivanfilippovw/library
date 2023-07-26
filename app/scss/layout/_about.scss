@@ -1,0 +1,44 @@
+.about {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  &__text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: initial;
+  }
+}
+
+.about__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 35px;
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    &-label {
+      width: 26px;
+      height: 26px;
+        >.about__gallery-pagination-input {
+        width: 26px;
+        height: 26px;
+        margin: 0;
+        background: $base-dark-color content-box;
+        border: 5px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-appearance: none;
+          &:checked {
+          background: $primary-color content-box;
+        }
+          &:hover {
+            background: $primary-color content-box;
+          }
+          &:active {
+            opacity: 0.5;
+          }
+      }
+    }
+  }
+}
