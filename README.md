@@ -1,1 +1,3 @@
-# [library](https://ivanfilippovw.github.io/library/)
+# Проект сайта [Library](https://ivanfilippovw.github.io/library/) - сайта по подбору и продаже книг
+* Ветка-деплой _**main**_ дубль ветки _**library**_.
+* Ветка _**library**_ является основной веткой разработки фиксированной верстки. Совпадение с макетом по pixel perfect размером при ширине экрана не меньше 1440рх.
