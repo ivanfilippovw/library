@@ -21,7 +21,12 @@
     margin-bottom: 40px;
   }
   &__phone-link {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
     color: $base-dark-color;
+    transition: all 0.2s;
     &:hover {
       color: $primary-color;
     }
@@ -40,8 +45,12 @@
     margin-bottom: 0;
   }
   &__mail-link {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     font-weight: 700;
     color: $base-dark-color;
+    transition: all 0.2s;
     &:hover {
       color: $primary-color;
     }

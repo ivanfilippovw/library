@@ -125,8 +125,8 @@ exports.watching = watching;
 
 exports.building = building;
 exports.build = series(cleanDist, building); //перезаписать папку dist
-exports.default = parallel(styles, images, scripts, pages, watching);
-// exports.default = parallel(styles, scripts, pages, watching);
+// exports.default = parallel(styles, images, scripts, pages, watching);
+exports.default = parallel(styles, scripts, pages, watching);
 
 // Когда начинаем делать проект
 // gulp fonts

@@ -15,6 +15,7 @@
   line-height: initial;
   &-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     letter-spacing: initial;
   }
@@ -32,10 +33,11 @@
     border: 2px solid $base-dark-color;
     border-radius: 50%;
     -webkit-appearance: none;
+    appearance: none;
+    transition: all 0.2s;
     &:hover {
       border-color: $primary-color;
     }
-    // нужно ли фокус делать для такого inputa? если да, то какой...
   }
   &-input:checked {
     border-color: $base-dark-color;
@@ -89,10 +91,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   min-height: 555px;
   padding: 15px 20px;
-  border: 1px solid #000;
+  border: 1px solid $base-dark-color;
   &__title {
     margin-top: 0;
     margin-bottom: 0;
@@ -111,7 +114,8 @@
     text-transform: capitalize;
   }
   &__about {
-    width: 358px;
+    width: 100%;
+    max-width: 358px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 15px;
@@ -119,17 +123,19 @@
     text-transform: capitalize;
   }
   &__button {
+    max-width: 300px;
     margin-top: auto;
     align-self: start;
-    padding: 0; // нужно ли убрать padding у всех кнопок? проверить, когда доделаю макет по pp
+    padding-left: 10px;
+    padding-right: 10px;
     transition: all 0.2s;
     &:hover {
       border: 1px solid $primary-color;
-      background: $primary-color;
+      background-color: $primary-color;
     }
     &:focus {
       border: 1px solid $primary-color;
-      background: $primary-color;
+      background-color: $primary-color;
     }
     &:active {
       opacity: 0.5;

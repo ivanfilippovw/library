@@ -11,14 +11,16 @@
     justify-content: space-between;
   }
   &__drinks-list {
-    width: 438px;
+    width: 100%;
+    max-width: 438px;
   }
   &__sweet-shop-list {
-    width: 482px;
-    >.cafe__list-title {
+    width: 100%;
+    max-width: 482px;
+    > .cafe__list-title {
       text-align: end;
     }
-    >.cafe__list {
+    > .cafe__list {
       align-items: flex-end;
     }
   }

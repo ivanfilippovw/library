@@ -41,7 +41,8 @@
   }
   &__input {
     display: block;
-    width: 520px;
+    width: 100%;
+    max-width: 520px;
     height: 66px;
     padding: 8px 20px;
 
@@ -53,6 +54,7 @@
 
     border: none;
     border-radius: 10px;
+    transition: all 0.2s;
     &:hover {
       opacity: 0.5;
     }
@@ -82,11 +84,11 @@
     transition: all 0.2s;
     &:hover {
       border: 1px solid $primary-color;
-      background: $primary-color;
+      background-color: $primary-color;
     }
     &:focus {
       border: 1px solid $primary-color;
-      background: $primary-color;
+      background-color: $primary-color;
     }
     &:active {
       opacity: 0.5;
@@ -95,7 +97,8 @@
 }
 
 .cards__authorization {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   text-align: end;
   &-title {
     margin-top: 0;
@@ -106,7 +109,8 @@
     letter-spacing: 0.6px;
   }
   &-text {
-    width: 457px;
+    width: 100%;
+    max-width: 457px;
     margin-top: 0;
     margin-bottom: 35px;
     margin-left: auto;
@@ -123,11 +127,11 @@
     transition: all 0.2s;
     &:hover {
       border: 1px solid $primary-color;
-      background: $primary-color;
+      background-color: $primary-color;
     }
     &:focus {
       border: 1px solid $primary-color;
-      background: $primary-color;
+      background-color: $primary-color;
     }
     &:active {
       opacity: 0.5;
