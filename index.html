@@ -46,20 +46,20 @@
           <img class="about__image" src="app/images/about-3.jpg" width="450" height="560"
             alt="Huge rows of books going in a semicircle and several floors." loading="lazy">
         </div>
-        <form class="about__gallery-pagination">
-          <label class="about__gallery-pagination-label" for="first-section">
+        <ul class="about__gallery-pagination">
+          <li class="about__gallery-pagination-item">
             <span class="visually-hidden">The first section of the photo library.</span>
-            <input class="about__gallery-pagination-input" type="radio" id="first-section" name="gallery" checked>
-          </label>
-          <label class="about__gallery-pagination-label" for="second-section">
+            <button class="about__gallery-pagination-button--current" type="button"></button>
+          </li>
+          <li class="about__gallery-pagination-item">
             <span class="visually-hidden">The second section of the photo library.</span>
-            <input class="about__gallery-pagination-input" type="radio" id="second-section" name="gallery">
-          </label>
-          <label class="about__gallery-pagination-label" for="third-section">
+            <button class="about__gallery-pagination-button" type="button"></button>
+          </li>
+          <li class="about__gallery-pagination-item">
             <span class="visually-hidden">The third section of the photo library.</span>
-            <input class="about__gallery-pagination-input" type="radio" id="third-section" name="gallery">
-          </label>
-        </form>
+            <button class="about__gallery-pagination-button" type="button"></button>
+          </li>
+        </ul>
       </section>
       <section class="favorites" id="favorites">
         <h2 class="title favorites__title">Favorites</h2>
