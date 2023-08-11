@@ -3,9 +3,8 @@
 <!--=include head.html -->
 
 <body>
-  <div class="container">
     <!--=include header.html -->
-    <main class="main">
+    <main class="main container">
       <section class=" welcome">
         <h2 class="welcome__text">Welcome&nbsp;<br> to the Brooklyn Library</h2>
       </section>
@@ -283,25 +282,61 @@
         <div class="cafe__lists-wrapper">
           <div class="cafe__drinks-list">
             <h3 class="cafe__list-title">Coffee & Tea</h3>
-            <ul class="cafe__list">
-              <li class="cafe__item">Cold Brew Coffee <span class="cafe__price">$3</span></li>
-              <li class="cafe__item">French Press Pot <span class="cafe__price">$5</span></li>
-              <li class="cafe__item">Espresso <span class="cafe__price">$2</span></li>
-              <li class="cafe__item">Cappuccino <span class="cafe__price">$4</span></li>
-              <li class="cafe__item">Hot tea <span class="cafe__price">$2</span></li>
-              <li class="cafe__item">Cold tea <span class="cafe__price">$2</span></li>
-            </ul>
+            <dl class="cafe__list">
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Cold Brew Coffee</dt>
+                <dd class="cafe__price">$3</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">French Press Pot</dt>
+                <dd class="cafe__price">$5</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Espresso</dt>
+                <dd class="cafe__price">$2</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Cappuccino</dt>
+                <dd class="cafe__price">$4</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Hot tea</dt>
+                <dd class="cafe__price">$2</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Cold tea</dt>
+                <dd class="cafe__price">$2</dd>
+              </div>
+            </dl>
           </div>
           <div class="cafe__sweet-shop-list">
             <h3 class="cafe__list-title">Desserts & Cakes </h3>
-            <ul class="cafe__list">
-              <li class="cafe__item">Forest Gateau <span class="cafe__price">$16</span></li>
-              <li class="cafe__item">Blue Moon <span class="cafe__price">$16</span></li>
-              <li class="cafe__item">Truffle Cake <span class="cafe__price">$15</span></li>
-              <li class="cafe__item">Chocolate Cake <span class="cafe__price">$18</span></li>
-              <li class="cafe__item">Poet’s Dream Cake <span class="cafe__price">$16</span></li>
-              <li class="cafe__item">Pineapple Cake <span class="cafe__price">$14</span></li>
-            </ul>
+            <dl class="cafe__list">
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Forest Gateau</dt>
+                <dd class="cafe__price">$16</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Blue Moon</dt>
+                <dd class="cafe__price">$16</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Truffle Cake</dt>
+                <dd class="cafe__price">$15</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Chocolate Cake</dt>
+                <dd class="cafe__price">$18</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Poet’s Dream Cake</dt>
+                <dd class="cafe__price">$16</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Pineapple Cake</dt>
+                <dd class="cafe__price">$14</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
@@ -370,7 +405,6 @@
       </section>
     </main>
     <!--=include footer.html -->
-  </div>
   <script src="app/js/main.min.js"></script>
 </body>
 

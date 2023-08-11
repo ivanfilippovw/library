@@ -11,9 +11,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <h1 class="header__title">Brooklyn Public Library</h1>
+    <header class="header container">
+      <a class="header__title-link" href="#"><h1 class="header__title">Brooklyn Public Library</h1></a>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-item"><a href="#about" class="header__navigation-link">About</a></li>
@@ -30,7 +29,8 @@
         </svg>
       </a>
     </header>
-    <main class="main">
+    
+    <main class="main container">
       <section class=" welcome">
         <h2 class="welcome__text">Welcome&nbsp;<br> to the Brooklyn Library</h2>
       </section>
@@ -308,25 +308,61 @@
         <div class="cafe__lists-wrapper">
           <div class="cafe__drinks-list">
             <h3 class="cafe__list-title">Coffee & Tea</h3>
-            <ul class="cafe__list">
-              <li class="cafe__item">Cold Brew Coffee <span class="cafe__price">$3</span></li>
-              <li class="cafe__item">French Press Pot <span class="cafe__price">$5</span></li>
-              <li class="cafe__item">Espresso <span class="cafe__price">$2</span></li>
-              <li class="cafe__item">Cappuccino <span class="cafe__price">$4</span></li>
-              <li class="cafe__item">Hot tea <span class="cafe__price">$2</span></li>
-              <li class="cafe__item">Cold tea <span class="cafe__price">$2</span></li>
-            </ul>
+            <dl class="cafe__list">
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Cold Brew Coffee</dt>
+                <dd class="cafe__price">$3</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">French Press Pot</dt>
+                <dd class="cafe__price">$5</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Espresso</dt>
+                <dd class="cafe__price">$2</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Cappuccino</dt>
+                <dd class="cafe__price">$4</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Hot tea</dt>
+                <dd class="cafe__price">$2</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Cold tea</dt>
+                <dd class="cafe__price">$2</dd>
+              </div>
+            </dl>
           </div>
           <div class="cafe__sweet-shop-list">
             <h3 class="cafe__list-title">Desserts & Cakes </h3>
-            <ul class="cafe__list">
-              <li class="cafe__item">Forest Gateau <span class="cafe__price">$16</span></li>
-              <li class="cafe__item">Blue Moon <span class="cafe__price">$16</span></li>
-              <li class="cafe__item">Truffle Cake <span class="cafe__price">$15</span></li>
-              <li class="cafe__item">Chocolate Cake <span class="cafe__price">$18</span></li>
-              <li class="cafe__item">Poet’s Dream Cake <span class="cafe__price">$16</span></li>
-              <li class="cafe__item">Pineapple Cake <span class="cafe__price">$14</span></li>
-            </ul>
+            <dl class="cafe__list">
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Forest Gateau</dt>
+                <dd class="cafe__price">$16</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Blue Moon</dt>
+                <dd class="cafe__price">$16</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Truffle Cake</dt>
+                <dd class="cafe__price">$15</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Chocolate Cake</dt>
+                <dd class="cafe__price">$18</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Poet’s Dream Cake</dt>
+                <dd class="cafe__price">$16</dd>
+              </div>
+              <div class="cafe__list-wrapper">
+                <dt class="cafe__item">Pineapple Cake</dt>
+                <dd class="cafe__price">$14</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
@@ -394,14 +430,14 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__wrapper">
         <div class="footer__info-wrapper">
-          <a class="footer__address-link" href="https://goo.gl/maps/CLoLmvMZkpEPcUFH6">286 Cadman Plaza, New York, NY
-            11238, United States</a>
+          <address class="footer__address"><a class="footer__address-link" href="https://goo.gl/maps/CLoLmvMZkpEPcUFH6">286 Cadman Plaza, New York, NY
+            11238, United States</a></address>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="https://twitter.com">
+              <a class="footer__link" href="https://twitter.com" target="_blank">
                 <span class="visually-hidden">Go to Twitter.</span>
                 <svg class="footer__twitter-icon" aria-hidden="true" focusable="false">
                   <use xlink:href="app/images/sprite.svg#footer-twitter-icon"></use>
@@ -409,7 +445,7 @@
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="https://instagram.com">
+              <a class="footer__link" href="https://instagram.com" target="_blank">
                 <span class="visually-hidden">Go to Instagram.</span>
                 <svg class="footer__instagram-icon" aria-hidden="true" focusable="false">
                   <use xlink:href="app/images/sprite.svg#footer-instagram-icon"></use>
@@ -417,7 +453,7 @@
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="https://facebook.com">
+              <a class="footer__link" href="https://facebook.com" target="_blank">
                 <span class="visually-hidden">Go to Facebook.</span>
                 <svg class="footer__facebook-icon" aria-hidden="true" focusable="false">
                   <use xlink:href="app/images/sprite.svg#footer-facebook-icon"></use>
@@ -427,17 +463,17 @@
           </ul>
         </div>
         <div class="footer__schedule-wrapper">
-          <p class="footer__schedule">Mon - Fri<br>08:00 am - 07:00 pm</p>
-          <p class="footer__schedule">Sat - Sun<br>10:00 am - 06:00 pm</p>
+          <p class="footer__schedule">Mon - Fri<br><time>08:00 am</time> - <time>07:00 pm</time></p>
+          <p class="footer__schedule">Sat - Sun<br><time>10:00 am</time> - <time>06:00 pm</time></p>
         </div>
       </div>
       <div class="footer__meta-wrapper">
         <p class="footer__year">2023</p>
-        <a class="footer__school" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
-        <a class="footer__github-link" href="https://github.com/ivanfilippovw">Ivan</a>
+        <a class="footer__school" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a>
+        <a class="footer__github-link" href="https://github.com/ivanfilippovw" target="_blank">Ivan</a>
       </div>
     </footer>
-  </div>
+    
   <script src="app/js/main.min.js"></script>
 </body>
 
