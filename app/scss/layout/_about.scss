@@ -25,7 +25,7 @@
 .about__gallery {
   display: flex;
   gap: 25px;
-  margin-bottom: 20px; // 35 поставь после проверки pp
+  margin-bottom: 35px; // для проверки на макете 748px ставить 20px
 
   @media (max-width: $tablet-s) {
     align-items: center;
