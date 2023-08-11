@@ -44,7 +44,7 @@
   &-input:checked {
     border-color: $base-dark-color;
     background: $base-dark-color content-box;
-    &[checked]:hover {
+    &:hover {
       border-color: $primary-color;
       background: $primary-color content-box;
     }
@@ -68,10 +68,10 @@
 }
 
 .books {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   row-gap: 40px;
-  column-gap: 260px;
+  column-gap: 16%;
   &__title {
     margin-top: 0;
     margin-bottom: 20px;
@@ -96,7 +96,10 @@
   width: 100%;
   max-width: 550px;
   min-height: 555px;
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-right: 170px;
+  padding-bottom: 15px;
+  padding-left: 20px;
   border: 1px solid $base-dark-color;
   &__title {
     margin-top: 0;
@@ -119,14 +122,14 @@
     width: 100%;
     max-width: 358px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: auto;
     font-size: 15px;
     line-height: 2.66;
     text-transform: capitalize;
   }
   &__button {
     max-width: 300px;
-    margin-top: auto;
+    margin-top: 0;
     align-self: start;
     padding-left: 10px;
     padding-right: 10px;

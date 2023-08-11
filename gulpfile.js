@@ -44,6 +44,15 @@ function styles() {
     .pipe(browserSync.stream())
 }
 
+function stylesFull() {
+  return src('app/scss/style.scss')
+    .pipe(autoprefixer({overrideBrowserslist: ['last 3 version']}))
+    .pipe(concat('style.css'))
+    .pipe(scss())
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
+}
+
 function images() {
   return src(['app/images/src/*.*', '!app/images/src/*.svg'])
     .pipe(newer('app/images'))
@@ -119,6 +128,7 @@ exports.images = images;
 exports.sprite = sprite;
 
 exports.styles = styles;
+exports.stylesFull = stylesFull;
 exports.scripts = scripts;
 exports.pages = pages;
 exports.watching = watching;
@@ -126,7 +136,7 @@ exports.watching = watching;
 exports.building = building;
 exports.build = series(cleanDist, building); //перезаписать папку dist
 // exports.default = parallel(styles, images, scripts, pages, watching);
-exports.default = parallel(styles, scripts, pages, watching);
+exports.default = parallel(styles, stylesFull, scripts, pages, watching);
 
 // Когда начинаем делать проект
 // gulp fonts

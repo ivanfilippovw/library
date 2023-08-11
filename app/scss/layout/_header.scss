@@ -7,6 +7,23 @@
   padding-left: 20px;
   color: $base-light-color;
   background-color: $light-dark-color;
+  &__title-link {
+    font-family: $font-second;
+    font-size: 30px;
+    line-height: 1.66;
+    letter-spacing: 0.6px;
+    color: $base-light-color;
+    transition: all 0.2s;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      color: $primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
   &__title {
     margin-top: 0;
     margin-bottom: 0;
