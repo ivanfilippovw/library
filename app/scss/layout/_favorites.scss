@@ -72,6 +72,17 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 40px;
   column-gap: 16%;
+
+  @media (max-width: $desktop-s) {
+    column-gap: 5%;
+  }
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 20px;
