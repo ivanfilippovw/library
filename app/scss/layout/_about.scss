@@ -1,14 +1,19 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
+
   &__text {
     margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
     letter-spacing: initial;
   }
+
   &__image {
     display: block;
     width: 100%;
@@ -20,7 +25,17 @@
 .about__gallery {
   display: flex;
   gap: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 20px; // 35 поставь после проверки pp
+
+  @media (max-width: $tablet-s) {
+    align-items: center;
+    gap: 58px;
+
+    > div:not(:first-of-type) {
+      display: none;
+    }
+  }
+
   &-pagination {
     display: flex;
     justify-content: center;
@@ -37,8 +52,8 @@
         border: none;
         border-radius: 50%;
         &:hover::before {
-            background-color: $primary-color;
-          }
+          background-color: $primary-color;
+        }
         &:focus::before {
           background-color: $primary-color;
         }
@@ -77,6 +92,43 @@
           border-radius: 50%;
         }
       }
+
+      &--tablet {
+        display: none;
+
+        @media (max-width: $tablet-s) {
+          display: list-item;
+        }
+      }
     }
+  }
+}
+
+.about__gallery-button {
+  display: none;
+  width: 24px;
+  height: 24px;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: $base-light-color;
+  border: none;
+
+  @media (max-width: $tablet-s) {
+    display: block;
+  }
+
+
+}
+
+.about__gallery-button svg {
+  &:hover {
+    opacity: 0.5;
+  }
+  &:focus {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }

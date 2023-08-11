@@ -20,6 +20,10 @@
     flex-wrap: wrap;
     gap: 80px;
     letter-spacing: initial;
+
+    @media (max-width: $tablet-xxs) {
+      row-gap: 10px;
+    }
   }
   &-item {
     display: flex;
@@ -81,6 +85,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: $tablet-xxs) {
+    padding-right: 40px;
   }
 
   &__title {

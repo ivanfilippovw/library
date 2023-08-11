@@ -113,6 +113,15 @@
     line-height: initial;
     color: $base-light-color;
     transition: all 0.2s;
+
+    @media (max-width: $tablet-xxs) {
+      margin-right: 64px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-right: 0;
+    }
+
     &:hover {
       color: $primary-color;
     }
