@@ -23,6 +23,12 @@ body {
   background-color: $base-light-color;
 }
 
+.body-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .main {
   flex-grow: 1;
 }
