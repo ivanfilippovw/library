@@ -6,6 +6,12 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $tablet-s) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 21px
+    }
   }
   &__search-title {
     margin-top: 0;
@@ -102,6 +108,13 @@
   width: 100%;
   max-width: 600px;
   text-align: end;
+
+  @media (max-width: $tablet-s) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-title {
     margin-top: 0;
     margin-bottom: 35px;
@@ -109,7 +122,12 @@
     font-size: 30px;
     line-height: normal;
     letter-spacing: 0.6px;
+
+    @media (max-width: $tablet-xxs) {
+      margin-bottom: 40px;
+    }
   }
+
   &-text {
     width: 100%;
     max-width: 457px;
@@ -118,27 +136,40 @@
     margin-left: auto;
     text-align: end;
     letter-spacing: 0.4px;
+
+    @media (max-width: $tablet-s) {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    @media (max-width: $tablet-xxs) {
+      max-width: 535px;
+      margin-bottom: 39px;
+    }
   }
+
   &-buttons {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
   }
+
   &-button {
     padding: 0;
     transition: all 0.2s;
+
     &:hover {
       border: 1px solid $primary-color;
       background-color: $primary-color;
     }
+
     &:focus {
       border: 1px solid $primary-color;
       background-color: $primary-color;
     }
+
     &:active {
       opacity: 0.5;
     }
   }
 }
-
-

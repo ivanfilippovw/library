@@ -11,6 +11,11 @@
   &__lists-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $tablet-s) {
+      flex-direction: column;
+      row-gap: 40px
+    }
   }
   &__drinks-list {
     width: 100%;
@@ -24,6 +29,10 @@
     }
     > .cafe__list {
       align-items: flex-end;
+    }
+
+    @media (max-width: $tablet-s) {
+      align-self: flex-end;
     }
   }
   &__list-title {
@@ -45,6 +54,7 @@
   &__list-wrapper {
     display: flex;
   }
+
   &__item {
     display: flex;
     text-transform: capitalize;
